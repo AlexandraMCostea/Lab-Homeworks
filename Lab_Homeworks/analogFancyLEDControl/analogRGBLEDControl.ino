@@ -10,6 +10,8 @@ int greenVal;
 int blueVal; 
 
 void setup() {
+  Serial.begin(9600);
+  
   pinMode(redPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
   pinMode(greenPin, OUTPUT);
@@ -17,8 +19,6 @@ void setup() {
   pinMode(redIn, INPUT);
   pinMode(greenIn, INPUT);
   pinMode(blueIn,INPUT);
-  
-  Serial.begin(9600);
 }
 
 void loop() { 
