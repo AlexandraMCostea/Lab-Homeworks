@@ -4,6 +4,7 @@ const int bluePin = 11;
 const int redIn = 0; 
 const int greenIn = 1; 
 const int blueIn = 2; 
+
 int redVal; 
 int greenVal; 
 int blueVal; 
@@ -12,9 +13,11 @@ void setup() {
   pinMode(redPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
   pinMode(greenPin, OUTPUT);
+  
   pinMode(redIn, INPUT);
   pinMode(greenIn, INPUT);
   pinMode(blueIn,INPUT);
+  
   Serial.begin(9600);
 }
 
