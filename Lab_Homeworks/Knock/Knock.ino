@@ -23,13 +23,13 @@ void loop() {
   if (passiveBuzzerValue != 0 && passiveBuzzerValue > threshold) {
     Serial.println(passiveBuzzerValue);
   //  delay(5000);
-    tone(activeBuzzerPin, buzzerTone, 500);
-  if (buttonState == 1)
-    ok = 0;
-  if (ok == 0){
+    tone (activeBuzzerPin, buzzerTone, 500);
+    if (buttonState == 1)
+      ok = 0;
+    if (ok == 0){
       noTone(activeBuzzerPin);
       passiveBuzzerValue = 0;
     }
   }
-    ok = 1;
+  ok = 1;
 }
