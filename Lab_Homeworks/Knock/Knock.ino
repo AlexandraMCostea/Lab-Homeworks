@@ -30,6 +30,6 @@ void loop() {
       noTone(activeBuzzerPin);
       passiveBuzzerValue = 0;
     }
-   Serial.println(ok);
   }
+    ok = 1;
 }
